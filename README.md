@@ -739,7 +739,7 @@ https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_b
 
 # 1114
 
-# Together Square  diff 1191
+# 254D  Together Square  diff 1191
 
 解答遷移 AC
 
@@ -756,6 +756,10 @@ https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_b
 ➁　思考
 
 iを全探索し、jを満たす個数を数え上げたい → 例えば i=2 なら j は 2,2^3,2* 3^2 など 素因数分解したとき、2の指数が奇数、それ以外が偶数のものになる。よって 1 ～ Nすべて、エラストテネスの篩で素因数分解を行い、指数が奇数となる 底 のみを格納したタプルを作り、それをkeyにカウンターを更新していく。また、平方数ではそのような底は存在しないから代わりに -1 を使用する。→　求める個数は Σ nC2 * 2 + n   となる (Σ(n: 1 → キーの種類) ) 
+
+* 追記
+
+普通に個数は n^2
 
 
 # 172D  Tsundoku  diff   930
